@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-// import style from "src\style.js"
 import { Spinnie } from './Spinner'
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Container } from 'react-bootstrap';
-import { render } from '@testing-library/react';
+
 
 export function Play(props) {
   const [currentlyPlaying, setCurrentlyPlaying] = useState(false);
@@ -26,29 +25,26 @@ export function Play(props) {
       }
     }
     else {
-      props.changeShouldPlay(props.index, true);//WORKS. if someone else is playing then add this one to waiting list i.e. shouldBePlaying = true
+      props.changeShouldPlay(props.index, true);// if someone else is playing then add this one to waiting list i.e. shouldBePlaying = true
     }
 
   }
 
   useEffect(() => {
     if (currentlyPlaying) {
-      for (let j = 0; j < 20; j++){
-      console.log(`${j}`)
-      }
-      props.onStart();///WORKS necessary, adds +1 to counter of active songs 
+      props.onStart();// adds +1 to counter of active songs 
     }
     if (!currentlyPlaying){
-      console.log('update counter - 1')
-      props.onStop();//necessary, subtracts -1 from counter of active songs
+      props.onStop();//subtracts -1 from counter of active songs
     }
-  }, [currentlyPlaying])//previously props.canJoin
+  }, [currentlyPlaying])//when song is played/stopped update active songs counter
 
   useEffect(() => {
     if (props.canJoin && props.audioClip.shouldBePlaying) {
       joinPlay();
     }
-  }, [props.canJoin])//previously props.canJoin
+  }, [props.canJoin])//start this track when loop has ended 
+
 
   const joinPlay = () => {
     props.anyPlaying();//change 'loopHasEnded' value to false
@@ -60,13 +56,6 @@ export function Play(props) {
       joinPlay();
     }
   }
-
-
-
-  // if (props.join(props.index)){
-  //   console.log('in the join in play')
-  //   joinPlay();
-  // }
 
   const stop = () => {
     if (currentlyPlaying) {

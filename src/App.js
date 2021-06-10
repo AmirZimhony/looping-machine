@@ -1,9 +1,7 @@
-import Header from './components/Header';
 import React, { useState } from 'react';
-import MusicBox from './components/MusicBox';
 import { Play } from './components/Play';
 import { Col, Row, Container, Card } from 'react-bootstrap';
-import './index.css';
+
 
 
 import Bass from './music_files/Bass Warwick heavy funk groove on E 120 BPM.mp3';
@@ -15,7 +13,7 @@ import groove from './music_files/GrooveB_120bpm_Tanggu.mp3';
 import MazePolitics from './music_files/MazePolitics_120_Perc.mp3';
 import pas3 from './music_files/PAS3GROOVE1.03B.mp3';
 import organSynth from './music_files/SilentStar_120_Em_OrganSynth.mp3';
-import reactDom from 'react-dom';
+
 
 
 
@@ -47,46 +45,32 @@ function App() {
     newArr[i] = clip;
     setAudioClips(newArr);
   }
-  // const joinPlay = (i) => {
-  //   if ( {...audioClips[i].shouldBePlaying}) {
-  //     console.log('WE ARE IN joinPlay in app.js')
-  //     return true;
-  //   }
-  // }
 
-  // const setLoopHasEndedSong = (index, playingNow) => {
-  //   const audioClipsModified = [...audioClips];
-  //   const clip = { ...audioClips[index] };
-  //   clip.playing = playingNow;
-  //   audioClipsModified[index] = clip;
-  //   setAudioClips({ audioClipsModified });
-  // }
 
   return (
     <body>
-    <Container>
-      <Row>
-        <Col sm={4}>
-          <h1 className='mb-3 text-center'>Behold your tracks: </h1>
-          {audioClips.map((audio, i) => {
-            return <Card border='dark' className="text-center">
-              <Card.Title> Track {i+1}: {audio.label} </Card.Title>
-            </Card>
-          })}
-        </Col>
-        <Col sm={4}>
-          <div className="container">
-            <h2 className=' mt-4 text-center'>Play them now!</h2>
-            <div>
-              {audioClips.map((audio, i) => {
-                return <Play key={i} index={i} onStart={handleStart} onStop={handleStop} count={counter} changeShouldPlay={updateArray} anyPlaying={startPlay} loopEnd={endLoop} canJoin={loopHasEnded} audioClip={audio} />
-              })}
+      <Container>
+        <Row>
+          <Col sm={4}>
+            <h1 className='mb-3 text-center'>Behold your tracks: </h1>
+            {audioClips.map((audio, i) => {
+              return <Card border='dark' className="text-center">
+                <Card.Title> Track {i + 1}: {audio.label} </Card.Title>
+              </Card>
+            })}
+          </Col>
+          <Col sm={4}>
+            <div className="container">
+              <h2 className=' mt-4 text-center'>Play them now!</h2>
+              <div>
+                {audioClips.map((audio, i) => {
+                  return <Play key={i} index={i} onStart={handleStart} onStop={handleStop} count={counter} changeShouldPlay={updateArray} anyPlaying={startPlay} loopEnd={endLoop} canJoin={loopHasEnded} audioClip={audio} />
+                })}
+              </div>
             </div>
-          </div>
-        </Col>
-
-      </Row>
-    </Container>
+          </Col>
+        </Row>
+      </Container>
     </body>
   );
 }

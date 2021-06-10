@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/AmirZimhony/looping-machine/static/css/main.eec0b238.chunk.css",
+    "main.js": "/AmirZimhony/looping-machine/static/js/main.62d2ba47.chunk.js",
+    "main.js.map": "/AmirZimhony/looping-machine/static/js/main.62d2ba47.chunk.js.map",
+    "runtime-main.js": "/AmirZimhony/looping-machine/static/js/runtime-main.3cbc0ed7.js",
+    "runtime-main.js.map": "/AmirZimhony/looping-machine/static/js/runtime-main.3cbc0ed7.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/AmirZimhony/looping-machine/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.83006ff0.chunk.js": "/AmirZimhony/looping-machine/static/js/2.83006ff0.chunk.js",
+    "static/js/2.83006ff0.chunk.js.map": "/AmirZimhony/looping-machine/static/js/2.83006ff0.chunk.js.map",
+    "static/js/3.23005491.chunk.js": "/AmirZimhony/looping-machine/static/js/3.23005491.chunk.js",
+    "static/js/3.23005491.chunk.js.map": "/AmirZimhony/looping-machine/static/js/3.23005491.chunk.js.map",
+    "index.html": "/AmirZimhony/looping-machine/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/AmirZimhony/looping-machine/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.eec0b238.chunk.css.map": "/AmirZimhony/looping-machine/static/css/main.eec0b238.chunk.css.map",
+    "static/js/2.83006ff0.chunk.js.LICENSE.txt": "/AmirZimhony/looping-machine/static/js/2.83006ff0.chunk.js.LICENSE.txt",
+    "static/media/120_future_funk_beats_25.5eb417fc.mp3": "/AmirZimhony/looping-machine/static/media/120_future_funk_beats_25.5eb417fc.mp3",
+    "static/media/120_stutter_breakbeats_16.37c82282.mp3": "/AmirZimhony/looping-machine/static/media/120_stutter_breakbeats_16.37c82282.mp3",
+    "static/media/Bass Warwick heavy funk groove on E 120 BPM.52c24c81.mp3": "/AmirZimhony/looping-machine/static/media/Bass Warwick heavy funk groove on E 120 BPM.52c24c81.mp3",
+    "static/media/FUD_120_StompySlosh.27bdc145.mp3": "/AmirZimhony/looping-machine/static/media/FUD_120_StompySlosh.27bdc145.mp3",
+    "static/media/GrooveB_120bpm_Tanggu.3e1411b4.mp3": "/AmirZimhony/looping-machine/static/media/GrooveB_120bpm_Tanggu.3e1411b4.mp3",
+    "static/media/MazePolitics_120_Perc.2d08c654.mp3": "/AmirZimhony/looping-machine/static/media/MazePolitics_120_Perc.2d08c654.mp3",
+    "static/media/PAS3GROOVE1.03B.f77c6da4.mp3": "/AmirZimhony/looping-machine/static/media/PAS3GROOVE1.03B.f77c6da4.mp3",
+    "static/media/SilentStar_120_Em_OrganSynth.f2d668af.mp3": "/AmirZimhony/looping-machine/static/media/SilentStar_120_Em_OrganSynth.f2d668af.mp3",
+    "static/media/electric guitar coutry slide 120bpm - B.230fcab8.mp3": "/AmirZimhony/looping-machine/static/media/electric guitar coutry slide 120bpm - B.230fcab8.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3cbc0ed7.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.83006ff0.chunk.js",
+    "static/css/main.eec0b238.chunk.css",
+    "static/js/main.62d2ba47.chunk.js"
+  ]
+}

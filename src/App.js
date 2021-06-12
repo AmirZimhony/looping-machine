@@ -48,7 +48,7 @@ function App() {
 
 
   return (
-    <body>
+    <body style={{backgroundColor: '#3895D3'}} >
       <Container>
         <Row>
           <Col sm={4}>

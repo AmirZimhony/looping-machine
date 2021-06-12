@@ -26,6 +26,7 @@ export function Play(props) {
     }
     else {
       props.changeShouldPlay(props.index, true);// if someone else is playing then add this one to waiting list i.e. shouldBePlaying = true
+      setShouldPlay(true);
     }
 
   }
@@ -64,6 +65,7 @@ export function Play(props) {
       console.log(audio)
       audio.pause()
       audio.currentTime = 0;
+      setShouldPlay(false);
       props.changeShouldPlay(props.index, false);
     }
   }
@@ -78,7 +80,7 @@ export function Play(props) {
             <Button id="startMusic" onClick={start}  >Playyyy day</Button>
             <button id="stopMusic" onClick={stop}>Stop me!</button>
           </Card.Body>
-          <Spinnie on={currentlyPlaying} />
+          <Spinnie on={currentlyPlaying} waiting={shouldPlay} />
         </Card>
       </Container >
 
